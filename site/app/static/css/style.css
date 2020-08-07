@@ -1,0 +1,82 @@
+#play{
+   width: 100%;
+   height: 100%;  
+   background-color:gray;
+}
+.txt{
+   text-align: center;
+
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: large;
+}
+#fig{
+   position: relative;
+}
+#m{
+   position: relative;
+   margin-top: 100px;     
+   box-shadow:5px 10px 18px gold;
+}
+.img1{
+   margin-top: 35px;
+   width: 400px;
+
+   height: 400px;
+
+   animation-name: t;
+   animation-duration: 10s;
+}
+#img0{
+   
+   animation-name: twist;
+   animation-duration: 4s;
+   
+   position: absolute;
+
+   top: -70px;
+   left: 45%;
+   width: 100px;
+
+   height: 100px;
+
+   border: 1px solid black;
+   border-radius: 50%;
+}
+.jumbotron{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.btn{
+   margin-bottom: 20px;
+}
+.e{
+   display: none !important;
+}
+.d{
+   display: block;
+}
+.nd{
+   display: none;
+}
+
+@keyframes twist {
+   from {
+     transform: rotateY(0deg);
+   }
+   to {
+     transform: rotateY(360deg);
+   }
+ }
+
+ @keyframes t {
+  0%{   
+     opacity: 0;
+  }
+
+  50%{  
+     opacity: 50;
+  }
+  100%{     
+     opacity: 100;
+  }
+ }
